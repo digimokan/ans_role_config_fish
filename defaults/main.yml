@@ -1,0 +1,3 @@
+# if true, set fish shell as user's login shell
+set_as_login_shell: false
+
