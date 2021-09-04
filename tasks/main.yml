@@ -13,3 +13,6 @@
 - name: "Configure fish shell prompt"
   ansible.builtin.include_tasks: config_prompt/main.yml
 
+- name: "Configure general fish shell behavior"
+  ansible.builtin.include_tasks: config_behavior/main.yml
+
