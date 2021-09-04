@@ -3,6 +3,7 @@
 
 - name: "Set fish shell as login shell"
   ansible.builtin.include_tasks: set_login_shell/main.yml
+  when: set_as_login_shell
 
 - name: "Update fish shell completions"
   ansible.builtin.include_tasks: update_completions/main.yml
