@@ -7,6 +7,3 @@
 - name: "Configure fish shell prompt"
   ansible.builtin.include_tasks: config_prompt.yml
 
-- name: "Configure fish shell history"
-  ansible.builtin.include_tasks: config_history.yml
-

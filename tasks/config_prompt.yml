@@ -1,0 +1,13 @@
+- name: "Config shell prompt in function {{ prompt_func_path }}"
+  ansible.builtin.template:
+    dest: "{{ prompt_func_path }}"
+    src: "fish_prompt.j2"
+    owner: "{{ user_name }}"
+    group: "{{ user_name }}"
+    mode: '644'
+    force: yes
+  vars:
+    prompt_func_path: "{{ fish_functions_dir }}/fish_prompt.fish"
+  become: true
+  become_user: root
+

@@ -1,0 +1,15 @@
+function fish_prompt
+  # display colorized pwd on first line
+  set_color --background blue
+  set_color yellow
+  echo $PWD
+
+  # display colorized caret and symbol on second line
+  set_color normal
+  set_color white
+  echo -n '--> $ '
+
+  # restore normal colors for further text
+  set_color normal
+end
+
