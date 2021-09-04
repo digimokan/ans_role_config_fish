@@ -1,12 +1,15 @@
 - name: "Install fish shell"
-  ansible.builtin.include_tasks: install_fish.yml
+  ansible.builtin.include_tasks: install_fish/main.yml
+
+- name: "Set fish shell as login shell"
+  ansible.builtin.include_tasks: set_login_shell/main.yml
 
 - name: "Update fish shell completions"
-  ansible.builtin.include_tasks: update_completions.yml
+  ansible.builtin.include_tasks: update_completions/main.yml
 
 - name: "Create subdirectory for fish function files"
-  ansible.builtin.include_tasks: create_functions_dir.yml
+  ansible.builtin.include_tasks: create_functions_dir/main.yml
 
 - name: "Configure fish shell prompt"
-  ansible.builtin.include_tasks: config_prompt.yml
+  ansible.builtin.include_tasks: config_prompt/main.yml
 
