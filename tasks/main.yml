@@ -1,0 +1,12 @@
+- name: "Install fish shell"
+  ansible.builtin.include_tasks: install_fish.yml
+
+- name: "Update fish shell completions"
+  ansible.builtin.include_tasks: update_completions.yml
+
+- name: "Configure fish shell prompt"
+  ansible.builtin.include_tasks: config_prompt.yml
+
+- name: "Configure fish shell history"
+  ansible.builtin.include_tasks: config_history.yml
+

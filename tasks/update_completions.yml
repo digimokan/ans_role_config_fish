@@ -1,0 +1,6 @@
+- name: "Update fish completions by running 'fish_update_completions'"
+  ansible.builtin.command:
+    cmd: fish_update_completions
+  become: true
+  become_user: root
+
