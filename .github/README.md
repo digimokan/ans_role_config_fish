@@ -8,23 +8,15 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
 ## Table Of Contents
 
 * [Purpose](#purpose)
-* [Requirements](#requirements)
 * [Supported Operating Systems](#supported-operating-systems)
 * [Quick Start](#quick-start)
     * [Use From Playbook](#use-from-playbook)
 * [Role Options](#role-options)
-* [Role Dependencies](#role-dependencies)
 * [Contributing](#contributing)
 
 ## Purpose
 
 * Configure fish shell prompt, colors, and behavior.
-* Optionally, set fish as user's login shell.
-
-## Requirements
-
-* Main [ans_role_config_shell](https://github.com/digimokan/ans_role_config_shell)
-  role has already been run, for `user_name`.
 
 ## Supported Operating Systems
 
@@ -62,7 +54,6 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
            name: ans_role_config_fish
          vars:
            user_name: "admin"
-           set_as_login_shell: true
    ```
 
 ## Role Options
@@ -74,10 +65,6 @@ See the role `defaults` file, for overridable vars:
 Define these _required_ vars for the role:
 
   * `user_name`: user to configure fish shell for
-
-## Role Dependencies
-
-* [ans_role_config_shell](https://github.com/digimokan/ans_role_config_shell)
 
 ## Contributing
 

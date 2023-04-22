@@ -1,6 +1,3 @@
-# if true, set fish shell as user's login shell
-set_as_login_shell: false
-
 # user dir where fish functions are placed (one function per file)
 fish_functions_dir: "/home/{{ user_name }}/.config/fish/functions"
 
