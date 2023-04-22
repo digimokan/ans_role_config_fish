@@ -61,9 +61,9 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
 
 ## Role Options
 
-See the role `defaults` file, for overridable vars:
+See the role `defaults` files for main role vars listings:
 
-  * [defaults/main.yml](../defaults/main.yml)
+  * [defaults](../defaults/main/)
 
 Define these _required_ vars for the role:
 
