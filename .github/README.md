@@ -22,7 +22,7 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
 
 ## Supported Operating Systems
 
-* Ubuntu bionic (18.04), focal (20.04), jammy (22.04)
+* Ubuntu.
 * Arch Linux.
 * FreeBSD.
 
