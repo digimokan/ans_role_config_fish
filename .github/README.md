@@ -18,6 +18,7 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
 
 * Configure fish colorized shell prompt.
 * Add optional fish user-defined command aliases.
+* NOTE: for login shell config, see [ans_role_config_shell](https://github.com/digimokan/ans_role_config_shell).
 
 ## Supported Operating Systems
 
