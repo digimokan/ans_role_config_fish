@@ -1,0 +1,8 @@
+# if true, update fish shell completions each time the role is run
+update_fish_completions: true
+
+# define a list of command aliases for the fish shell
+command_aliases: []
+# command_aliases:
+#   - { entry: "alias newsboat='newsboat --quiet '"", descrip: 'silence newsboat startup warnings' }
+

@@ -1,0 +1,6 @@
+# path to main fish config file, run for all fish shell instances
+fish_main_config_file_path: "/home/{{ user_name }}/.config/fish/config.fish"
+
+# path to a fish function-file that specifies a custom shell prompt
+fish_prompt_file_path: "/home/{{ user_name }}/.config/fish/functions/fish_prompt.fish"
+

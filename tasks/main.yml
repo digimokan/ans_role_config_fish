@@ -3,13 +3,11 @@
 
 - name: "Update fish shell completions"
   ansible.builtin.include_tasks: update_completions/main.yml
+  when: update_fish_completions
 
-- name: "Create subdirectory for fish function files"
-  ansible.builtin.include_tasks: create_functions_dir/main.yml
+- name: "Configure main fish config file"
+  ansible.builtin.include_tasks: config_main/main.yml
 
 - name: "Configure fish shell prompt"
   ansible.builtin.include_tasks: config_prompt/main.yml
-
-- name: "Configure general fish shell behavior"
-  ansible.builtin.include_tasks: config_behavior/main.yml
 

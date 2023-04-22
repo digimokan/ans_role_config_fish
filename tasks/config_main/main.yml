@@ -1,0 +1,19 @@
+- name: "Create {{ fish_main_config_file_path }} parent directories, if not exist"
+  ansible.builtin.file:
+    path: "{{ fish_main_config_file_path | dirname }}"
+    state: directory
+    owner: "{{ user_name }}"
+    mode: '755'
+  become: true
+  become_user: root
+
+- name: "Config aliases in main fish config file '{{ fish_main_config_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ fish_main_config_file_path }}"
+    src: "fish_main.j2"
+    owner: "{{ user_name }}"
+    mode: '644'
+    force: yes
+  become: true
+  become_user: root
+

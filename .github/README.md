@@ -16,10 +16,12 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
 
 ## Purpose
 
-* Configure fish shell prompt, colors, and behavior.
+* Configure fish colorized shell prompt.
+* Add optional fish user-defined command aliases.
 
 ## Supported Operating Systems
 
+* Ubuntu bionic (18.04), focal (20.04), jammy (22.04)
 * Arch Linux.
 * FreeBSD.
 
