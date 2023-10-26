@@ -13,7 +13,7 @@ set fish_greeting
 ################################################################################
 
 {% for func in command_functions %}
-# {{ function.descrip }}
+# {{ func.descrip }}
 function {{ func.name }}
   {{ func.body }}
 end
