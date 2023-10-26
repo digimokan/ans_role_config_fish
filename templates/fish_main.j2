@@ -12,8 +12,10 @@ set fish_greeting
 # SET ALIASES
 ################################################################################
 
-{% for alias in command_aliases %}
-{{ '# ' }}{{ alias.descrip }}
-{{ 'alias ' }}{{ alias.alias_keys }}{{ '="' }}{{ alias.cmd  }}{{ ' "' }}
+{% for func in command_functions %}
+# {{ function.descrip }}
+function {{ func.name }}
+  {{ func.body }}
+end
 
 {% endfor %}

@@ -1,8 +1,11 @@
 # if true, update fish shell completions each time the role is run
 update_fish_completions: true
 
-# define a list of command aliases for the fish shell
-command_aliases: []
-# command_aliases:
-#   - { alias_keys: 'newsboat', cmd: 'newsboat --quiet', descrip: 'silence newsboat startup warnings' }
+# an optional list of functions to define (to run at CLI, like aliases)
+# --> Use $argv for the full list of args
+# --> Use $argv[x] for a specific positional arg (first arg is $argv[1])
+# --> Use (count $argv) for the number of args
+command_functions: []
+# command_functions:
+#   - { name: 'newsboat', body: 'newsboat --quiet $argv', descrip: 'silence newsboat startup warnings' }
 
