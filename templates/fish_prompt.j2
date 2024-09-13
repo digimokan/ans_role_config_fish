@@ -11,7 +11,7 @@ function fish_prompt
 
   # LINE 1: display colorized git branch (if available)
   set_color --background brblack
-  set_color brwhite
+  set_color brred
   set --local current_branch "$({{ fish_prompt_show_git_branch_cmd }})"
   if test -n $current_branch
     printf " [$current_branch] "
