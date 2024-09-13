@@ -9,3 +9,7 @@ fish_command_functions: []
 # fish_command_functions:
 #   - { name: 'newsboat', body: 'newsboat --quiet $argv', descrip: 'silence newsboat startup warnings' }
 
+# use this command to show the git branch in the shell prompt
+# note: the default 'true' command has no output, so nothing is shown
+fish_prompt_show_git_branch_cmd: 'true'
+

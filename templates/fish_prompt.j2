@@ -2,14 +2,23 @@
 # ANSIBLE-MANAGED CONFIGURATION FILE
 
 function fish_prompt
-  # display colorized pwd on first line
+  # LINE 1: display colorized pwd
   printf "\n"
   set_color --background blue
   set_color yellow
-  printf "$PWD"
+  printf " $PWD "
   set_color normal
 
-  # display colorized caret and symbol on second line
+  # LINE 1: display colorized git branch (if available)
+  set_color --background brblack
+  set_color brwhite
+  set --local current_branch "$({{ fish_prompt_show_git_branch_cmd }})"
+  if test -n $current_branch
+    printf " [$current_branch] "
+  end
+  set_color normal
+
+  # LINE 2: display colorized caret and symbol
   set_color white
   printf "\n--> "
   set_color normal
