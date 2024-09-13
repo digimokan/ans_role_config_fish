@@ -57,17 +57,22 @@ Ansible role to configure the [fish shell](https://fishshell.com/) for interacti
            name: ans_role_config_fish
          vars:
            user_name: "admin"
+           public: true
    ```
 
 ## Role Options
 
-See the role `defaults` files for main role vars listings:
+Vars that must be defined when including the role in the playbook:
 
-  * [defaults](../defaults/main/)
+  * [dependencies](../defaults/main/dependencies/user.yml)
 
-Define these _required_ vars for the role:
+Vars with default values, which can be overridden in the playbook:
 
-  * `user_name`: user to configure fish shell for
+  * [overridable](../defaults/main/overridable)
+
+Vars defined by this role, exported with `public: true`, for use in other roles:
+
+  * [export](../defaults/main/export/commands.yml)
 
 ## Contributing
 

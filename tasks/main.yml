@@ -3,7 +3,7 @@
 
 - name: "Update fish shell completions"
   ansible.builtin.include_tasks: update_completions/main.yml
-  when: update_fish_completions
+  when: fish_update_completions
 
 - name: "Configure main fish config file"
   ansible.builtin.include_tasks: config_main/main.yml

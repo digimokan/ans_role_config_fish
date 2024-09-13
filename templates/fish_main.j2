@@ -12,7 +12,7 @@ set fish_greeting
 # SET ALIASES
 ################################################################################
 
-{% for func in command_functions %}
+{% for func in fish_command_functions %}
 # {{ func.descrip }}
 function {{ func.name }}
   {{ func.body }}
